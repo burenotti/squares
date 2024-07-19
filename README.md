@@ -2,7 +2,15 @@
 
 Squares is a simple library that provides geometric primitives.
 
+## Features
+
+- unit-tests with 100% Test coverage
+- pre-commit hooks
+- poetry
+- Makefile
+
 ## Usage
+
 ```python
 import squares
 
@@ -19,6 +27,7 @@ patched = triangle.with_sides(b=5)
 ```
 
 ## Building & Testing
+
 ```shell
 git clone https://github.com/burenotti/squares
 cd squares
