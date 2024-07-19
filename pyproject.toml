@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "squares"
+version = "0.1.0"
+description = "Library that calculates squares of circles and triangle"
+authors = ["Artem <burenin.aa@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+keywords = ["square", "math", "geometry"]
+packages = [
+    { include = "squares", from = "src" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.dev.dependencies]
+sphinx = "^7.4.6"
+ruff = "^0.5.3"
+pre-commit = "^3.7.1"
+
+
+[tool.poetry.group.test.dependencies]
+coverage = "^7.6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
